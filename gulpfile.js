@@ -25,7 +25,7 @@ gulp.task('default', function() {
         //.pipe(notIndexFilter)
         //.pipe(rev())
         //.pipe(notIndexFilter.restore)
-        //.pipe(revReplace())
+        //.pipe(revReplace())https://github.com/thingweb/thingweb-webui.git
         .pipe(gulpif('*.html', htmlmin({removeComments: true, collapseWhitespace: true})))
         .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('dist'))
